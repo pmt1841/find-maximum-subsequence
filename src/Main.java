@@ -20,25 +20,24 @@ public class Main {
                 }
             }
 
-            if (temp.size() > output.size()) {                  // Câu lệnh rẽ nhánh = 1
+            if (temp.size() > output.size()) {
                 output.clear();
                 output.addAll(temp);
             }
-            temp.clear();                                       // Câu lệnh = 1
+            temp.clear();
         }
 
-        for (Character character : output) {                    // Vòng lặp = 1
+        for (Character character : output) {                    // Vòng lặp = n
             System.out.print(character);
         }
 
-        System.out.println();                                   // Câu lệnh = 1
+        System.out.println();
     }
 }
 
 /*
         ĐỘ PHỨC TẠP CỦA BÀI TOÁN
-    T(n) = n(n - 1) + 1 + 1 + 1 +1
-    T(n) = n^2 - n +4
-    T(n) = O(n^2) - O(n)
+    T(n) = n(n - 1) + n
+    T(n) = n^2 - n + n
     T(n) = O(n^2)
  */
